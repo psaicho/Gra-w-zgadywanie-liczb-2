@@ -36,11 +36,7 @@ def game():
     choice = ''
     while choice != 'YOUWIN':
         if max - min > 1:
-            if choice == "TOBIG":
-                max = guess
-            elif choice == "TOSMALL":
-                min = guess
-            guess = int((max - min) / 2 + min)
+
             print_guess(guess)
             choice = check_answer(user_answer())
         else:
